@@ -12,11 +12,56 @@
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <title>Favorite Things</title>
 </head>
 
 <body>
     <h1>Here are my favorite things</h1>
+    <div class="container">
+        <form type="submit">
+            <div>
+                <label for="favorite-city">Favorite City</label>
+                <select name="favorite-city" id="favorite-city">
+                    <option value="portland">Portland</option>
+                    <option value="seattle">Seattle</option>
+                    <option value="sacramento">Sacramento</option>
+                </select>
+            </div>
+            <div>
+                <label for="favorite-car">Favorite Car</label>
+                <select name="favorite-car" id="favorite-car">
+                    <option value="honda">Honda</option>
+                    <option value="BMW">BMW</option>
+                    <option value="subaru">Subaru</option>
+                </select>
+            </div>
+            <div>
+                <label for="favorite-holiday">Favorite Holiday</label>
+                <select name="favorite-holiday" id="favorite-holiday">
+                    <option value="halloween">Halloween</option>
+                    <option value="pi-day">PI Day</option>
+                    <option value="easter">Easter</option>
+                </select>
+            </div>
+            <div>
+                <label for="favorite-food">Favorite food</label>
+                <select name="favorite-food" id="favorite-food">
+                    <option value="pizza">Pizza</option>
+                    <option value="tacos">Tacos</option>
+                    <option value="pasta">Pasta</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+    <div id="form-result">
+        <ul class="list-group">
+            <li>You told us that you like <span id="citySelect"></span></li>
+            <li>You told us that you like <span id="carSelect"></span></li>
+            <li>You told us that you like <span id="holidaySelect"></span></li>
+            <li>You told us that you like <span id="foodSelect"></span></li>
+        </ul>
+    </div>
 </body>
 
 </html>
